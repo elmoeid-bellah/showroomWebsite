@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+  :root {
+    --primary-color: #00b5d5;
+    --secondary-color: #0077b5;
+    --gray-color: #808080;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+}
+li,a, button{
+  color:#7A7A7A;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-decoration: none;
+   }
+   
+  header{
+      display: flex;
+      align-items: center;
+      justify-content:flex-end;
+      padding: 2px 32px;
+      background-color: #f5f5f5;
+    }
+  
+  .logo{
+      cursor: pointer;
+      margin-right: auto;
+  }
+  .links{
+      list-style:none;
+  }
+  
+  .links li{
+      display: inline-block;
+      padding: 0px 30px;
+  
+  }
+  .links li a{
+    padding: 9px 20px;
+    border-radius: 16px;
+    transition: all 0.3s ease 0s;
+    border-bottom: none;
+  }
+  .links li a:hover{
+    background-color: burlywood;
+    color: white;
+    border-bottom: none;
+  }
+
+.landing {
+    min-height: 100vh;
+    background-color: #f1f1f1;
+    background-image: url(imgs/road.jpg);
+    background-size: cover;
+    position: relative;
+    background-color: rgba(214, 214, 214, 0.6);  }
+  .landing .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .landing .text {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+    padding: 50px;
+    background-color:rgba(199, 168, 127, 0.438);
+    color: rgb(14, 14, 14);
+    display: flex;
+    justify-content: flex-end;
+  }
+  .landing .text .content {
+    max-width: 500px;
+  }
+  @media (max-width: 767px) {
+    .landing .text {
+      width: 100%;
+    }
+    .landing .text .content {
+      max-width: 100%;
+    }
+  }
+  .landing .text .content h2 {
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  .landing .text .content p {
+    font-size: 14px;
+    line-height: 2;
+  }
+  .landing .change-background {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ddd;
+  }
+  @media (max-width: 767px) {
+    .landing .change-background {
+      display: none;
+    }
+  }
+ 
